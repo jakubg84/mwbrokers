@@ -1,0 +1,644 @@
+@charset "UTF-8";
+/* 
+Theme Name: Rady Nadzorcze TEST
+Theme URI: https://egddesign.com
+Description: Szablon dla test.radynadzorcze.pl
+Template: responsive-mobile
+Version: 1.0.0
+Author: EGDDesign
+Author URI: https://egddesign.com
+License: GNU General Public License
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: responsive-mobile-child
+Responsywny szablon Test.RadyNadzorcze.pl, Copyright (C) 2017 EGDDesign
+*/
+/* 
+-------------------------------------------------------------- */
+/*--------------------------------------------------------------
+1.1 Body
+--------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,700&subset=latin-ext");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Open Sans', sans-serif !important; }
+
+/*--------------------------------------------------------------
+1.2 Menu
+--------------------------------------------------------------*/
+#main-menu-container {
+  background-color: #ebebeb; }
+
+#main-navigation .main-nav ul {
+  float: right; }
+  #main-navigation .main-nav ul .menu-item-has-children > a:after {
+    content: "\f0da";
+    color: #2e2e2e;
+    font-family: FontAwesome;
+    font-variant: normal;
+    speak: none;
+    text-transform: none;
+    padding-left: 8px;
+    width: 10px; }
+  #main-navigation .main-nav ul .menu-item-has-children > a:hover:after {
+    content: "\f0d7";
+    color: #2e2e2e;
+    font-family: FontAwesome;
+    font-variant: normal;
+    speak: none;
+    text-transform: none;
+    padding-left: 5px; }
+  #main-navigation .main-nav ul .menu-item-has-children .sub-menu {
+    background: rgba(235, 235, 235, 0.87) !important;
+    border: none;
+    margin: 0 !important;
+    padding: 0 !important;
+    -webkit-border-bottom-right-radius: 6px;
+    -webkit-border-bottom-left-radius: 6px;
+    -moz-border-radius-bottomright: 6px;
+    -moz-border-radius-bottomleft: 6px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    position: absolute;
+    top: 3em;
+    left: 0em;
+    z-index: 99999;
+    transition: top 1s ease; }
+  #main-navigation .main-nav ul .menu-item-has-children .sub-menu a:after {
+    content: ""; }
+  #main-navigation .main-nav ul li a {
+    color: #2e2e2e;
+    text-transform: uppercase; }
+
+#main-navigation ul li:hover > .sub-menu {
+  top: 0em;
+  transition: top .25s ease; }
+
+#main-navigation .main-nav ul li > ul {
+  position: absolute;
+  z-index: 999;
+  width: auto;
+  min-width: 250px;
+  padding: 0;
+  background-color: #ebebeb;
+  border-bottom: 1px solid #000;
+  color: #2e2e2e;
+  -webkit-transition: width 2s;
+  /* For Safari 3.1 to 6.0 */
+  transition: width 2s; }
+
+#main-navigation .main-nav ul li > ul a {
+  padding-right: 5px; }
+
+#main-navigation .main-nav ul li > ul a:hover {
+  border-bottom: 0px solid #ff8500 !important; }
+
+#main-navigation .main-nav ul li > ul li:before {
+  /*content:"\f061";*/
+  content: "■";
+  font-family: FontAwesome;
+  padding-left: 20px;
+  font-size: .8em;
+  color: #000000;
+  transition-property: color;
+  transition-duration: 4s;
+  transition-timing-function: linear; }
+
+#main-navigation .main-nav ul li > ul li:hover {
+  color: #000; }
+
+#main-navigation .main-nav ul li > ul a {
+  color: #2e2e2e; }
+
+#main-navigation .main-nav ul li > ul a:hover {
+  color: #000; }
+
+#main-navigation .main-nav ul li ul li a {
+  line-height: 2.5em;
+  white-space: nowrap;
+  font-weight: 300; }
+
+#main-navigation .main-nav ul li ul li a:before {
+  content: "■";
+  color: #000000;
+  padding-right: 7px;
+  padding-left: 10px; }
+
+/*--------------------------------------------------------------
+1.3 Nagłówek
+--------------------------------------------------------------*/
+body.page-id-2 #header {
+  background-image: url(../images/mwbroker_bg_top.jpg);
+  background-position: bottom center;
+  background-repeat: repeat-x;
+  padding-bottom: 0px; }
+
+#header #site-branding {
+  float: left;
+  width: 50%;
+  padding-left: 0px;
+  padding-right: 0px; }
+  #header #site-branding .Slogan {
+    display: none; }
+  #header #site-branding .boxyProdukty {
+    width: 100%;
+    min-height: 721px;
+    /*background-image: url(../images/mwbroker_bg_top.jpg);
+    background-position: center center;
+    background-repeat: repeat-x;*/ }
+    #header #site-branding .boxyProdukty .left-half-sidebar {
+      right: 0px;
+      position: static;
+      width: 100%; }
+      #header #site-branding .boxyProdukty .left-half-sidebar .widget_custom_html .widget-title {
+        display: none; }
+      #header #site-branding .boxyProdukty .left-half-sidebar .widget_custom_html .custom-html-widget ul li {
+        display: block;
+        width: 250px;
+        float: left;
+        min-height: 280px;
+        text-align: center; }
+        #header #site-branding .boxyProdukty .left-half-sidebar .widget_custom_html .custom-html-widget ul li .Box {
+          height: 280px; }
+          #header #site-branding .boxyProdukty .left-half-sidebar .widget_custom_html .custom-html-widget ul li .Box a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            text-transform: uppercase;
+            color: #fff;
+            font-weight: 600;
+            text-shadow: 0px 2px 2px #969696;
+            font-size: 1.5em;
+            border-radius: 0px;
+            -moz-transition: all .2s;
+            -o-transition: all .2s;
+            -webkit-transition: all .2s;
+            transition: all .2s;
+            /*  transition-timing: ease-in;*/ }
+          #header #site-branding .boxyProdukty .left-half-sidebar .widget_custom_html .custom-html-widget ul li .Box a:hover {
+            text-decoration: none;
+            border-radius: 10px;
+            -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+            -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+            /*color: #000;*/
+            /*    transform: rotate(360deg);*/ }
+          #header #site-branding .boxyProdukty .left-half-sidebar .widget_custom_html .custom-html-widget ul li .Box a.BoxUbezpieczenia {
+            background: #92c302; }
+            #header #site-branding .boxyProdukty .left-half-sidebar .widget_custom_html .custom-html-widget ul li .Box a.BoxUbezpieczenia .BoxNazwa:before {
+              content: url(../images/BoxUbezpieczenia.png);
+              display: block;
+              width: 100px;
+              height: 100px;
+              opacity: 1;
+              float: left;
+              width: 250px;
+              margin-top: 80px;
+              margin-bottom: 40px; }
+          #header #site-branding .boxyProdukty .left-half-sidebar .widget_custom_html .custom-html-widget ul li .Box a.BoxNieruchomosci {
+            background: #cb013d; }
+            #header #site-branding .boxyProdukty .left-half-sidebar .widget_custom_html .custom-html-widget ul li .Box a.BoxNieruchomosci .BoxNazwa:before {
+              content: url(../images/BoxNieruchomosci.png);
+              display: block;
+              width: 100px;
+              height: 100px;
+              opacity: 1;
+              float: left;
+              width: 250px;
+              margin-top: 80px;
+              margin-bottom: 40px; }
+          #header #site-branding .boxyProdukty .left-half-sidebar .widget_custom_html .custom-html-widget ul li .Box a.BoxFinansowanie {
+            background: #fee913; }
+            #header #site-branding .boxyProdukty .left-half-sidebar .widget_custom_html .custom-html-widget ul li .Box a.BoxFinansowanie .BoxNazwa:before {
+              content: url(../images/BoxFinanse.png);
+              display: block;
+              width: 100px;
+              height: 100px;
+              opacity: 1;
+              float: left;
+              width: 250px;
+              margin-top: 80px;
+              margin-bottom: 40px; }
+          #header #site-branding .boxyProdukty .left-half-sidebar .widget_custom_html .custom-html-widget ul li .Box a.BoxBudownictwo {
+            background: #00c3f6; }
+            #header #site-branding .boxyProdukty .left-half-sidebar .widget_custom_html .custom-html-widget ul li .Box a.BoxBudownictwo .BoxNazwa:before {
+              content: url(../images/BoxBudownictwo.png);
+              display: block;
+              width: 100px;
+              height: 100px;
+              opacity: 1;
+              float: left;
+              width: 250px;
+              margin-top: 80px;
+              margin-bottom: 40px; }
+      #header #site-branding .boxyProdukty .left-half-sidebar .widget_custom_html .custom-html-widget ul li.BoxLewy {
+        margin-right: 10px; }
+#header #secondary-header {
+  float: left;
+  width: 50%;
+  padding-left: 0px;
+  padding-right: 0px; }
+  #header #secondary-header .boxHasloReklamowe {
+    display: block;
+    vertical-align: middle;
+    line-height: 179px;
+    height: 179px;
+    text-align: center; }
+    #header #secondary-header .boxHasloReklamowe h1.hasloReklamowe {
+      font-family: "Open Sans", sans-serif;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: normal;
+      font-weight: 300;
+      font-style: italic;
+      font-size: 3em; }
+  #header #secondary-header .boxFoto {
+    width: 100%;
+    min-height: 721px;
+    background-image: url(../images/mwbroker_logo_wer2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    /*background-size: 575px 721px;*/
+    background-size: 100%; }
+
+/*--------------------------------------------------------------
+1.2.1 Strona główna / Ozdobnik
+--------------------------------------------------------------*/
+body.page-id-2 .Ozdobnik {
+  display: none; }
+
+.Ozdobnik {
+  height: 20px;
+  background: #fcfdff;
+  background: -moz-linear-gradient(top, #fcfdff 0%, #f5fafe 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #fcfdff), color-stop(100%, #f5fafe));
+  background: -webkit-linear-gradient(top, #fcfdff 0%, #f5fafe 100%);
+  background: -o-linear-gradient(top, #fcfdff 0%, #f5fafe 100%);
+  background: -ms-linear-gradient(top, #fcfdff 0%, #f5fafe 100%);
+  background: linear-gradient(to bottom, #fcfdff 0%, #f5fafe 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfdff', endColorstr='#f5fafe', GradientType=0 ); }
+
+/*--------------------------------------------------------------
+1.3 Strona główna / główny box
+--------------------------------------------------------------*/
+#wrapper .content-area {
+  padding: 0px; }
+  #wrapper .content-area .site-main {
+    width: 100%;
+    /*--------------------------------------------------------------
+    1.3 Strona główna / główny box / O Nas
+    --------------------------------------------------------------*/ }
+    #wrapper .content-area .site-main .breadcrumb-list {
+      display: none; }
+    #wrapper .content-area .site-main article#post-2 {
+      padding-bottom: 0px; }
+      #wrapper .content-area .site-main article#post-2 header.entry-header {
+        text-align: center; }
+        #wrapper .content-area .site-main article#post-2 header.entry-header h1.entry-title {
+          font-family: "Open Sans", sans-serif;
+          font-size: 2.5em; }
+      #wrapper .content-area .site-main article#post-2 .post-entry .entry-content p {
+        font-family: "Open Sans", sans-serif;
+        text-align: center;
+        font-size: 1.4em;
+        line-height: 2em;
+        margin-bottom: 20px; }
+        #wrapper .content-area .site-main article#post-2 .post-entry .entry-content p a.ReadMore {
+          /*display: block;*/
+          display: inline-block;
+          margin-top: 15px;
+          background-color: #464646;
+          /*padding: 5px 30px;*/
+          padding: 0px 30px;
+          color: #ffffff;
+          border-color: #464646;
+          -webkit-transition: background-color 0.5s ease-out;
+          -moz-transition: background-color 0.5s ease-out;
+          -o-transition: background-color 0.5s ease-out;
+          transition: background-color 0.5s ease-out; }
+        #wrapper .content-area .site-main article#post-2 .post-entry .entry-content p a.ReadMore:hover {
+          text-decoration: none;
+          background-color: #EBEBEB;
+          border-color: #464646;
+          color: #464646; }
+
+/*--------------------------------------------------------------
+2.1 Stopka
+--------------------------------------------------------------*/
+#footer {
+  margin-top: 0px;
+  padding-top: 0px;
+  background-color: #dceaf6;
+  color: #464646; }
+  #footer #footer-wrapper {
+    width: 1000px;
+    padding-left: 0px;
+    padding-right: 0px;
+    /*--------------------------------------------------------------
+    2.2 Stopka / Blok 1 Skontaktuj się z nami
+    --------------------------------------------------------------*/ }
+    #footer #footer-wrapper #footer-widgets-container .widget-area .footer-widget {
+      width: 45%; }
+    #footer #footer-wrapper #footer-widgets-container .widget-area #text-2 {
+      padding-left: 0px;
+      padding-right: 30px;
+      margin-right: 5%; }
+      #footer #footer-wrapper #footer-widgets-container .widget-area #text-2 .widget-title {
+        color: #464646;
+        margin-bottom: 40px;
+        margin-top: 30px; }
+        #footer #footer-wrapper #footer-widgets-container .widget-area #text-2 .widget-title h3 {
+          font-size: 1.84em;
+          font-weight: 600; }
+      #footer #footer-wrapper #footer-widgets-container .widget-area #text-2 .textwidget p {
+        line-height: 1.6em; }
+      #footer #footer-wrapper #footer-widgets-container .widget-area #text-2 .textwidget ul li {
+        margin-bottom: 10px;
+        font-size: 1.3em; }
+        #footer #footer-wrapper #footer-widgets-container .widget-area #text-2 .textwidget ul li a {
+          color: #464646;
+          border-bottom: solid 1px transparent;
+          -webkit-transition: color .2s ease-out, border-bottom-color .2s ease-out;
+          -moz-transition: color .2s ease-out, border-bottom-color .2s ease-out;
+          -ms-transition: color .2s ease-out, border-bottom-color .2s ease-out;
+          -o-transition: color .2s ease-out, border-bottom-color .2s ease-out;
+          transition: color .2s ease-out, border-bottom-color .2s ease-out; }
+        #footer #footer-wrapper #footer-widgets-container .widget-area #text-2 .textwidget ul li a:hover {
+          text-decoration: none;
+          border-bottom: solid 1px #464646; }
+      #footer #footer-wrapper #footer-widgets-container .widget-area #text-2 .textwidget ul li.KontaktKomorka:before {
+        content: "\f095";
+        color: #464646;
+        font-family: FontAwesome;
+        font-variant: normal;
+        speak: none;
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        -moz-border-radius: 15px;
+        -webkit-border-radius: 15px;
+        border-radius: 15px;
+        border: 1px solid #000;
+        padding-left: 5px;
+        margin-right: 15px; }
+      #footer #footer-wrapper #footer-widgets-container .widget-area #text-2 .textwidget ul li.KontaktEmail:before {
+        content: "\f0e0";
+        color: #464646;
+        font-family: FontAwesome;
+        font-variant: normal;
+        speak: none;
+        display: inline-block;
+        font-size: 1.4em;
+        margin-right: 14px; }
+      #footer #footer-wrapper #footer-widgets-container .widget-area #text-2 .textwidget ul li.KontaktFB:before {
+        content: "\f082";
+        color: #464646;
+        font-family: FontAwesome;
+        font-variant: normal;
+        speak: none;
+        display: inline-block;
+        font-size: 1.4em;
+        margin-right: 18px; }
+    #footer #footer-wrapper #footer-widgets-container .widget-area #custom_html-3 {
+      padding-left: 30px;
+      padding-right: 0px;
+      margin-left: 5%; }
+      #footer #footer-wrapper #footer-widgets-container .widget-area #custom_html-3 .widget-title {
+        color: #464646;
+        margin-bottom: 40px;
+        margin-top: 30px; }
+        #footer #footer-wrapper #footer-widgets-container .widget-area #custom_html-3 .widget-title h3 {
+          font-size: 1.84em;
+          font-weight: 600; }
+      #footer #footer-wrapper #footer-widgets-container .widget-area #custom_html-3 .textwidget .wpcf7 .wpcf7-form label {
+        margin-bottom: 10px;
+        min-width: 400px; }
+        #footer #footer-wrapper #footer-widgets-container .widget-area #custom_html-3 .textwidget .wpcf7 .wpcf7-form label span input.wpcf7-text {
+          border: 0px;
+          box-shadow: none;
+          font-weight: 300;
+          border: 1px solid #fff; }
+        #footer #footer-wrapper #footer-widgets-container .widget-area #custom_html-3 .textwidget .wpcf7 .wpcf7-form label span input.wpcf7-text:focus, #footer #footer-wrapper #footer-widgets-container .widget-area #custom_html-3 .textwidget .wpcf7 .wpcf7-form label span textarea.wpcf7-textarea:focus {
+          border: 1px solid  #464646; }
+        #footer #footer-wrapper #footer-widgets-container .widget-area #custom_html-3 .textwidget .wpcf7 .wpcf7-form label span textarea.wpcf7-textarea {
+          border: 0px;
+          box-shadow: none;
+          font-weight: 300;
+          height: 80px;
+          border: 1px solid #fff; }
+      #footer #footer-wrapper #footer-widgets-container .widget-area #custom_html-3 .textwidget .wpcf7 .wpcf7-form input.wpcf7-submit {
+        background-color: #464646;
+        border-color: #464646;
+        -webkit-transition: background-color 0.5s ease-out;
+        -moz-transition: background-color 0.5s ease-out;
+        -o-transition: background-color 0.5s ease-out;
+        transition: background-color 0.5s ease-out; }
+      #footer #footer-wrapper #footer-widgets-container .widget-area #custom_html-3 .textwidget .wpcf7 .wpcf7-form input.wpcf7-submit:hover {
+        text-decoration: none;
+        background-color: #fff;
+        border-color: #464646;
+        color: #464646; }
+      #footer #footer-wrapper #footer-widgets-container .widget-area #custom_html-3 .textwidget .wpcf7 .wpcf7-form .wpcf7-mail-sent-ok {
+        /*	border: 2px solid #000000;
+        	background: #EBEBEB;
+        	color: #000000;*/
+        border: 2px solid #000000;
+        background: #000;
+        color: #fff; }
+
+/*--------------------------------------------------------------
+2.3 Stopka / Blok 2 Mapka
+--------------------------------------------------------------*/
+.google-map {
+  /*margin-left: -15px;
+  margin-right: -15px;x
+  margin-bottom: 0px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;;*/
+  margin-top: 10px;
+  margin-bottom: 10px;
+  /*pointer-events: auto;*/
+  pointer-events: none;
+  display: block; }
+
+.google-map #mapid {
+  height: 400px; }
+
+.google-map #mapinfo {
+  opacity: 0;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  position: relative; }
+
+.google-map #mapid:hover ~ #mapinfo {
+  display: block;
+  position: relative;
+  height: 400px;
+  width: 100%;
+  opacity: 1; }
+
+/*--------------------------------------------------------------
+2.4 Stopka / Copyright
+--------------------------------------------------------------*/
+#footer.copyright {
+  background-color: #000000;
+  margin-bottom: 10px; }
+  #footer.copyright #footer-wrapper {
+    width: 1170px; }
+    #footer.copyright #footer-wrapper #footer-base .copyright, #footer.copyright #footer-wrapper #footer-base .powered, #footer.copyright #footer-wrapper #footer-base .scroll-top {
+      color: #b2b2b2; }
+      #footer.copyright #footer-wrapper #footer-base .copyright a, #footer.copyright #footer-wrapper #footer-base .powered a, #footer.copyright #footer-wrapper #footer-base .scroll-top a {
+        color: #b2b2b2;
+        border-bottom: solid 1px transparent;
+        -webkit-transition: color .2s ease-out, border-bottom-color .2s ease-out;
+        -moz-transition: color .2s ease-out, border-bottom-color .2s ease-out;
+        -ms-transition: color .2s ease-out, border-bottom-color .2s ease-out;
+        -o-transition: color .2s ease-out, border-bottom-color .2s ease-out;
+        transition: color .2s ease-out, border-bottom-color .2s ease-out; }
+      #footer.copyright #footer-wrapper #footer-base .copyright a:hover, #footer.copyright #footer-wrapper #footer-base .powered a:hover, #footer.copyright #footer-wrapper #footer-base .scroll-top a:hover {
+        text-decoration: none;
+        border-bottom: solid 1px #464646; }
+
+/*--------------------------------------------------------------
+4.1 - RWD / Header / Menu
+--------------------------------------------------------------*/
+@media only screen and (max-width: 768px) {
+  .header-row {
+    margin-right: 0px;
+    margin-left: 0px; }
+
+  #mobile-current-item {
+    position: absolute;
+    top: 10px;
+    padding-left: 10px;
+    color: #000; }
+
+  #main-menu {
+    min-height: 40px; }
+
+  .container {
+    padding-left: 0px !important;
+    padding-right: 0px !important; }
+
+  #main-navigation .main-nav ul {
+    width: 100%;
+    padding-top: 0px;
+    border-top: 1px solid #EBEBEB; }
+
+  #main-navigation.menu-open .main-nav ul {
+    width: 100%;
+    padding-top: 0px;
+    border-top: 1px solid #000; }
+
+  #main-navigation .main-nav ul {
+    float: left; }
+    #main-navigation .main-nav ul li.menu-item-has-children .sub-menu {
+      display: block;
+      position: static; }
+    #main-navigation .main-nav ul .menu-item-has-children:hover > .sub-menu {
+      display: block;
+      position: static; }
+
+  #main-navigation .main-nav ul li > ul li {
+    list-style: none; }
+
+  #main-navigation .main-nav ul li > ul li::before {
+    padding-right: 10px; }
+
+  /*--------------------------------------------------------------
+  4.2 - RWD / Header / Boxy
+  --------------------------------------------------------------*/
+  #header #site-branding {
+    float: none;
+    width: 100%;
+    		 /*.Slogan:hover {
+    		 	text-shadow: 0 1px 0 #ccc,
+                   0 2px 0 #c9c9c9,
+                   0 3px 0 #bbb,
+                   0 4px 0 #b9b9b9,
+                   0 5px 0 #aaa,
+                   0 6px 1px rgba(0,0,0,.1),
+                   0 0 5px rgba(0,0,0,.1),
+                   0 1px 3px rgba(0,0,0,.3),
+                   0 3px 5px rgba(0,0,0,.2),
+                   0 5px 10px rgba(0,0,0,.25),
+                   0 10px 10px rgba(0,0,0,.2),
+                   0 20px 20px rgba(0,0,0,.15);
+    		 }*/ }
+    #header #site-branding .Slogan {
+      display: block;
+      font-family: "Open Sans", sans-serif;
+      vertical-align: middle;
+      line-height: normal;
+      font-weight: 300;
+      font-style: italic;
+      font-size: 2em;
+      text-align: center;
+      			/* text-shadow: 0 1px 0 #ccc,
+                     0 2px 0 #c9c9c9,
+                     0 3px 0 #bbb,
+                     0 4px 0 #b9b9b9,
+                     0 5px 0 #aaa,
+                     0 6px 1px rgba(0,0,0,.1),
+                     0 0 5px rgba(0,0,0,.1),
+                     0 1px 3px rgba(0,0,0,.3),
+                     0 3px 5px rgba(0,0,0,.2),
+                     0 5px 10px rgba(0,0,0,.25),
+                     0 10px 10px rgba(0,0,0,.2),
+                     0 20px 20px rgba(0,0,0,.15);*/ }
+    #header #site-branding .boxyProdukty .left-half-sidebar .widget_custom_html .custom-html-widget ul li {
+      width: 100%; }
+    #header #site-branding .boxyProdukty .left-half-sidebar .widget_custom_html .custom-html-widget ul li.BoxLewy {
+      margin-right: 0px; }
+    #header #site-branding .boxyProdukty .left-half-sidebar .widget_custom_html .custom-html-widget ul li .Box a.BoxUbezpieczenia .BoxNazwa::before, #header #site-branding .boxyProdukty .left-half-sidebar .widget_custom_html .custom-html-widget ul li .Box a.BoxNieruchomosci .BoxNazwa::before, #header #site-branding .boxyProdukty .left-half-sidebar .widget_custom_html .custom-html-widget ul li .Box a.BoxBudownictwo .BoxNazwa::before, #header #site-branding .boxyProdukty .left-half-sidebar .widget_custom_html .custom-html-widget ul li .Box a.BoxFinansowanie .BoxNazwa::before {
+      width: 100%; }
+  #header #secondary-header {
+    display: none; }
+
+  /*--------------------------------------------------------------
+  4.3 - RWD / Wrapper itp itd
+  --------------------------------------------------------------*/
+  #wrapper .content-area .site-main article#post-2 .post-entry .entry-content p {
+    font-size: 1.2em;
+    line-height: 1.4em; }
+
+  #wrapper .content-area .site-main article#post-2 .post-entry .entry-content p a.ReadMore {
+    display: block;
+    padding: 10px 30px; }
+
+  /*--------------------------------------------------------------
+  4.2 - RWD / Stopka / Kontakt & Linki
+  --------------------------------------------------------------*/
+  #footer #footer-wrapper #footer-widgets-container .widget-area #text-2 .widget-title, #footer #footer-wrapper #footer-widgets-container .widget-area #custom_html-3 .widget-title {
+    margin-bottom: 20px;
+    margin-top: 10px; }
+    #footer #footer-wrapper #footer-widgets-container .widget-area #text-2 .widget-title h3, #footer #footer-wrapper #footer-widgets-container .widget-area #custom_html-3 .widget-title h3 {
+      text-align: center;
+      font-size: 1.4em; }
+
+  /*--------------------------------------------------------------
+  4.3 - RWD / Stopka / Ogólne
+  --------------------------------------------------------------*/
+  #footer #footer-wrapper {
+    width: 100%; }
+    #footer #footer-wrapper #footer-widgets-container {
+      margin-left: 0px;
+      margin-right: 0px; }
+      #footer #footer-wrapper #footer-widgets-container .widget-area #text-2, #footer #footer-wrapper #footer-widgets-container .widget-area #custom_html-3 {
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-right: 0%;
+        margin-left: 0%; }
+        #footer #footer-wrapper #footer-widgets-container .widget-area #text-2 .textwidget .wpcf7 .wpcf7-form label, #footer #footer-wrapper #footer-widgets-container .widget-area #custom_html-3 .textwidget .wpcf7 .wpcf7-form label {
+          min-width: 100%; }
+
+  #footer.copyright #footer-wrapper {
+    width: 100%; } }
+
+/*# sourceMappingURL=style.css.map */

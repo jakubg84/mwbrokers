@@ -1,0 +1,16 @@
+/* 
+Theme Name: MW Broker
+Theme URI: https://egddesign.com
+Description: Szablon dla MW Broker
+Template: responsive-mobile
+Version: 1.0.0
+Author: EGDDesign
+Author URI: https://egddesign.com
+License: GNU General Public License
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: responsive-mobile-child
+Responsywny szablon Dobre Nawozy, Copyright (C) 2017 EGDDesign
+*/
+
+@import url("css/style.css");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,700&subset=latin-ext');
