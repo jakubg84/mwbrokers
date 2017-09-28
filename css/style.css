@@ -505,6 +505,237 @@ body.page-id-2 .Ozdobnik {
         border-bottom: solid 1px #464646; }
 
 /*--------------------------------------------------------------
+3.1 Podstrony / Ubezpieczenia
+--------------------------------------------------------------*/
+body.page-id-6 #wrapper .content-area .site-main article .post-entry ul li.Finansowanie, body.page-id-10 #wrapper .content-area .site-main article .post-entry ul li.Finansowanie {
+  background: #FEE913; }
+body.page-id-6 #wrapper .content-area .site-main article .post-entry ul li, body.page-id-10 #wrapper .content-area .site-main article .post-entry ul li {
+  display: block;
+  width: 49%;
+  float: left;
+  min-height: 280px;
+  text-align: center;
+  border-radius: 0px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background: #92C302; }
+  body.page-id-6 #wrapper .content-area .site-main article .post-entry ul li .Box, body.page-id-10 #wrapper .content-area .site-main article .post-entry ul li .Box {
+    height: 280px;
+    			/*		a:hover {
+	    						text-decoration: none;
+	    						border-radius: 10px;
+    							-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+								-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+								box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+						
+
+    					}*/ }
+    body.page-id-6 #wrapper .content-area .site-main article .post-entry ul li .Box a, body.page-id-10 #wrapper .content-area .site-main article .post-entry ul li .Box a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      text-transform: uppercase;
+      color: #fff;
+      font-weight: 600;
+      text-shadow: 0px 2px 2px #969696;
+      font-size: 1.5em;
+      border-radius: 0px;
+      -moz-transition: all .2s;
+      -o-transition: all .2s;
+      -webkit-transition: all .2s;
+      transition: all .2s;
+      /*  transition-timing: ease-in;*/ }
+    body.page-id-6 #wrapper .content-area .site-main article .post-entry ul li .Box a.BoxSamochod, body.page-id-10 #wrapper .content-area .site-main article .post-entry ul li .Box a.BoxSamochod {
+      background: #92C302; }
+      body.page-id-6 #wrapper .content-area .site-main article .post-entry ul li .Box a.BoxSamochod .BoxNazwa:before, body.page-id-10 #wrapper .content-area .site-main article .post-entry ul li .Box a.BoxSamochod .BoxNazwa:before {
+        /*content: url(../images/BoxUbezpieczenia.png);							*/
+        content: "\f1b9";
+        font-size: 5em;
+        font-family: FontAwesome;
+        display: block;
+        width: 100%;
+        height: 100px;
+        opacity: 1;
+        float: left;
+        min-width: 500px;
+        margin-top: 50px;
+        margin-bottom: 40px;
+        font-weight: 300; }
+    body.page-id-6 #wrapper .content-area .site-main article .post-entry ul li .Box a.BoxFirma, body.page-id-10 #wrapper .content-area .site-main article .post-entry ul li .Box a.BoxFirma {
+      background: #8BB90F; }
+      body.page-id-6 #wrapper .content-area .site-main article .post-entry ul li .Box a.BoxFirma .BoxNazwa:before, body.page-id-10 #wrapper .content-area .site-main article .post-entry ul li .Box a.BoxFirma .BoxNazwa:before {
+        content: "\f1ad ";
+        font-size: 5em;
+        font-family: FontAwesome;
+        display: block;
+        width: 100%;
+        height: 100px;
+        opacity: 1;
+        float: left;
+        min-width: 500px;
+        margin-top: 50px;
+        margin-bottom: 40px;
+        font-weight: 300; }
+    body.page-id-6 #wrapper .content-area .site-main article .post-entry ul li .Box a.BoxDom, body.page-id-10 #wrapper .content-area .site-main article .post-entry ul li .Box a.BoxDom {
+      background: #83B01B; }
+      body.page-id-6 #wrapper .content-area .site-main article .post-entry ul li .Box a.BoxDom .BoxNazwa:before, body.page-id-10 #wrapper .content-area .site-main article .post-entry ul li .Box a.BoxDom .BoxNazwa:before {
+        content: "\f015 ";
+        font-size: 5em;
+        font-family: FontAwesome;
+        display: block;
+        width: 100%;
+        height: 100px;
+        opacity: 1;
+        float: left;
+        min-width: 500px;
+        margin-top: 50px;
+        margin-bottom: 40px;
+        font-weight: 300; }
+    body.page-id-6 #wrapper .content-area .site-main article .post-entry ul li .Box a.BoxLudzie, body.page-id-10 #wrapper .content-area .site-main article .post-entry ul li .Box a.BoxLudzie {
+      background: #7CA628; }
+      body.page-id-6 #wrapper .content-area .site-main article .post-entry ul li .Box a.BoxLudzie .BoxNazwa:before, body.page-id-10 #wrapper .content-area .site-main article .post-entry ul li .Box a.BoxLudzie .BoxNazwa:before {
+        content: "\f0c0 ";
+        font-size: 5em;
+        font-family: FontAwesome;
+        display: block;
+        width: 100%;
+        height: 100px;
+        opacity: 1;
+        float: left;
+        min-width: 500px;
+        margin-top: 50px;
+        margin-bottom: 40px;
+        font-weight: 300; }
+    body.page-id-6 #wrapper .content-area .site-main article .post-entry ul li .Box a.BoxLeasing, body.page-id-10 #wrapper .content-area .site-main article .post-entry ul li .Box a.BoxLeasing {
+      background: #FEE913; }
+      body.page-id-6 #wrapper .content-area .site-main article .post-entry ul li .Box a.BoxLeasing .BoxNazwa:before, body.page-id-10 #wrapper .content-area .site-main article .post-entry ul li .Box a.BoxLeasing .BoxNazwa:before {
+        /*content: url(../images/BoxUbezpieczenia.png);							*/
+        content: "\f1b9";
+        font-size: 5em;
+        font-family: FontAwesome;
+        display: block;
+        width: 100%;
+        height: 100px;
+        opacity: 1;
+        float: left;
+        min-width: 500px;
+        margin-top: 50px;
+        margin-bottom: 40px;
+        font-weight: 300; }
+    body.page-id-6 #wrapper .content-area .site-main article .post-entry ul li .Box a.BoxKredytFirmowy, body.page-id-10 #wrapper .content-area .site-main article .post-entry ul li .Box a.BoxKredytFirmowy {
+      background: #F1DD1F; }
+      body.page-id-6 #wrapper .content-area .site-main article .post-entry ul li .Box a.BoxKredytFirmowy .BoxNazwa:before, body.page-id-10 #wrapper .content-area .site-main article .post-entry ul li .Box a.BoxKredytFirmowy .BoxNazwa:before {
+        content: "\f1ad ";
+        font-size: 5em;
+        font-family: FontAwesome;
+        display: block;
+        width: 100%;
+        height: 100px;
+        opacity: 1;
+        float: left;
+        min-width: 500px;
+        margin-top: 50px;
+        margin-bottom: 40px;
+        font-weight: 300; }
+    body.page-id-6 #wrapper .content-area .site-main article .post-entry ul li .Box a.BoxKredytLudnosc, body.page-id-10 #wrapper .content-area .site-main article .post-entry ul li .Box a.BoxKredytLudnosc {
+      background: #E5D22B; }
+      body.page-id-6 #wrapper .content-area .site-main article .post-entry ul li .Box a.BoxKredytLudnosc .BoxNazwa:before, body.page-id-10 #wrapper .content-area .site-main article .post-entry ul li .Box a.BoxKredytLudnosc .BoxNazwa:before {
+        content: "\f015 ";
+        font-size: 5em;
+        font-family: FontAwesome;
+        display: block;
+        width: 100%;
+        height: 100px;
+        opacity: 1;
+        float: left;
+        min-width: 500px;
+        margin-top: 50px;
+        margin-bottom: 40px;
+        font-weight: 300; }
+    body.page-id-6 #wrapper .content-area .site-main article .post-entry ul li .Box a.BoxProdIndywidualny, body.page-id-10 #wrapper .content-area .site-main article .post-entry ul li .Box a.BoxProdIndywidualny {
+      background: #D8C636; }
+      body.page-id-6 #wrapper .content-area .site-main article .post-entry ul li .Box a.BoxProdIndywidualny .BoxNazwa:before, body.page-id-10 #wrapper .content-area .site-main article .post-entry ul li .Box a.BoxProdIndywidualny .BoxNazwa:before {
+        content: "\f0c0 ";
+        font-size: 5em;
+        font-family: FontAwesome;
+        display: block;
+        width: 100%;
+        height: 100px;
+        opacity: 1;
+        float: left;
+        min-width: 500px;
+        margin-top: 50px;
+        margin-bottom: 40px;
+        font-weight: 300; }
+body.page-id-6 #wrapper .content-area .site-main article .post-entry ul li #Ukryty, body.page-id-10 #wrapper .content-area .site-main article .post-entry ul li #Ukryty {
+  display: none;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+  visibility: hidden; }
+body.page-id-6 #wrapper .content-area .site-main article .post-entry ul li:hover, body.page-id-10 #wrapper .content-area .site-main article .post-entry ul li:hover {
+  border-radius: 10px; }
+body.page-id-6 #wrapper .content-area .site-main article .post-entry ul li:hover #Ukryty, body.page-id-10 #wrapper .content-area .site-main article .post-entry ul li:hover #Ukryty {
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  top: 0px;
+  z-index: 1000;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1.1em;
+  font-weight: 300;
+  height: 280px;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+  opacity: 1;
+  visibility: visible; }
+  body.page-id-6 #wrapper .content-area .site-main article .post-entry ul li:hover #Ukryty h2, body.page-id-10 #wrapper .content-area .site-main article .post-entry ul li:hover #Ukryty h2 {
+    margin: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px; }
+  body.page-id-6 #wrapper .content-area .site-main article .post-entry ul li:hover #Ukryty p, body.page-id-10 #wrapper .content-area .site-main article .post-entry ul li:hover #Ukryty p {
+    text-align: justify; }
+  body.page-id-6 #wrapper .content-area .site-main article .post-entry ul li:hover #Ukryty a.WiecejInformacji, body.page-id-10 #wrapper .content-area .site-main article .post-entry ul li:hover #Ukryty a.WiecejInformacji {
+    display: block;
+    /*padding: 10px 0px;*/
+    width: 30%;
+    height: 35px;
+    margin: 0 auto;
+    background: #fff;
+    color: #000;
+    font-size: 1em;
+    text-shadow: none;
+    line-height: 35px;
+    border: 1px solid #fff; }
+  body.page-id-6 #wrapper .content-area .site-main article .post-entry ul li:hover #Ukryty a.WiecejInformacji:hover, body.page-id-10 #wrapper .content-area .site-main article .post-entry ul li:hover #Ukryty a.WiecejInformacji:hover {
+    background: #92C302;
+    color: #fff;
+    border: 1px solid #fff; }
+body.page-id-6 #wrapper .content-area .site-main article .post-entry ul li.Finansowanie:hover #Ukryty, body.page-id-10 #wrapper .content-area .site-main article .post-entry ul li.Finansowanie:hover #Ukryty {
+  color: #000; }
+  body.page-id-6 #wrapper .content-area .site-main article .post-entry ul li.Finansowanie:hover #Ukryty a.WiecejInformacji, body.page-id-10 #wrapper .content-area .site-main article .post-entry ul li.Finansowanie:hover #Ukryty a.WiecejInformacji {
+    background: #000;
+    color: #fff;
+    border: 1px solid #000; }
+  body.page-id-6 #wrapper .content-area .site-main article .post-entry ul li.Finansowanie:hover #Ukryty a.WiecejInformacji:hover, body.page-id-10 #wrapper .content-area .site-main article .post-entry ul li.Finansowanie:hover #Ukryty a.WiecejInformacji:hover {
+    background: #FEE913;
+    color: #000;
+    border: 1px solid #000; }
+body.page-id-6 #wrapper .content-area .site-main article .post-entry ul li:hover #Samochod, body.page-id-6 #wrapper .content-area .site-main article .post-entry ul li:hover #Firma, body.page-id-6 #wrapper .content-area .site-main article .post-entry ul li:hover #Dom, body.page-id-6 #wrapper .content-area .site-main article .post-entry ul li:hover #Ludzie, body.page-id-10 #wrapper .content-area .site-main article .post-entry ul li:hover #Samochod, body.page-id-10 #wrapper .content-area .site-main article .post-entry ul li:hover #Firma, body.page-id-10 #wrapper .content-area .site-main article .post-entry ul li:hover #Dom, body.page-id-10 #wrapper .content-area .site-main article .post-entry ul li:hover #Ludzie {
+  display: none; }
+body.page-id-6 #wrapper .content-area .site-main article .post-entry ul li:hover a, body.page-id-10 #wrapper .content-area .site-main article .post-entry ul li:hover a {
+  text-decoration: none; }
+body.page-id-6 #wrapper .content-area .site-main article .post-entry ul li.BoxLewy, body.page-id-10 #wrapper .content-area .site-main article .post-entry ul li.BoxLewy {
+  margin-right: 1%;
+  margin-bottom: 0px; }
+
+/*--------------------------------------------------------------
 4.1 - RWD / Header / Menu
 --------------------------------------------------------------*/
 @media only screen and (max-width: 768px) {
